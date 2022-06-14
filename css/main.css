@@ -1,0 +1,236 @@
+:root {
+    --gb-nav-background-color: rgba(0,0,0,0.8);
+    --gb-nav-font-color: #f5f5f7;
+    --main-ipad-air-background-color: #000;
+}
+
+header {
+    width: 100%;
+}
+
+#global-nav-area {
+    background-color: var(--gb-nav-background-color);
+}
+
+.global-nav-container {
+    height: 44px;
+    max-width: 980px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 22px;
+    overflow: hidden;
+}
+
+.nav-apple-logo {
+    background-image: url(../img/globalnav_apple_image__b5er5ngrzxqq_large.svg);
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 44px;
+}
+
+.pc-hide {
+    display: none;
+}
+
+.hamberger-menu-box {
+    width: 45px;
+    height: 45px;
+}
+
+.hamberger-menu-icon {
+    display: block;
+    width: 15px;
+    height: 1px;
+    background-color: #fff;
+    border-radius: 0.5px;
+    margin-top: 18px;
+}
+
+.hamberger-menu-icon-2 {
+    display: block;
+    width: 15px;
+    height: 1px;
+    background-color: #fff;
+    border-radius: 0.5px;
+    margin-top: 6px;
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+}
+
+.nav-store {
+    background-image: url(../img/globalnav_links_store_image__c7jy08initqq_large.svg);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 44px;
+}
+
+.nav-mac {
+    background-image: url(../img/globalnav_links_mac_image__dazlko3t9a6a_large.svg);
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 44px;
+}
+
+.nav-ipad {
+    background-image: url(../img/globalnav_links_ipad_image__fw9qyj9lloi2_large.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 44px;
+}
+
+.nav-iphone {
+    background-image: url(../img/globalnav_links_iphone_image__ko7x4isga4ia_large.svg);
+    background-repeat: no-repeat;
+    width: 38px;
+    height: 44px;
+}
+
+.nav-watch {
+    background-image: url(../img/globalnav_links_watch_image__gkoblojrlsqe_large.svg);
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 44px;
+}
+
+.nav-airpods {
+    background-image: url(../img/globalnav_links_airpods_image__f969s84ivmaa_large.svg);
+    background-repeat: no-repeat;
+    width: 43px;
+    height: 44px;
+}
+
+.nav-tv-home {
+    background-image: url(../img/globalnav_links_tvhome_image__zb2ewyxbi6ae_large.svg);
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 44px;
+}
+
+.nav-services {
+    background-image: url(../img/globalnav_links_onlyonapple_image__c4t8k97tougm_large.svg);
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 44px;
+}
+
+.nav-accessories {
+    background-image: url(../img/globalnav_links_accessories_image__edj0wqmfwxyu_large.svg);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 44px;
+}
+
+.nav-support {
+    background-image: url(../img/globalnav_links_support_image__bw9kctll7u3m_large.svg);
+    background-repeat: no-repeat;
+    width: 39px;
+    height: 44px;
+}
+
+.nav-search {
+    background-image: url(../img/globalnav_search_image__cbllq1gkias2_large.svg);
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 88px;
+}
+
+.nav-shopping-bag {
+    background-image: url(../img/globalnav_bag_image__yzte50i47ciu_large.svg);
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 44px;
+}
+
+#product-menu-area {
+    width: 100%;
+    background-color: var(--main-ipad-air-background-color);
+}
+
+.product-menu-ipad-pro {
+    background-image: url(../img/ipadpro_dark__175htbn6m76u_large.svg);
+    background-repeat: no-repeat;
+    width: 41px;
+    height: 54px;
+}
+
+.product-menu-ipad-air {
+    background-image: url(../img/ipadair_dark__gi1t1iqta1yu_large.svg);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 54px;
+}
+
+.product-menu-ipad {
+    background-image: url(../img/ipad_dark__fe8ocv9hktim_large.svg);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 54px;
+}
+
+.product-menu-ipad-mini {
+    background-image: url(../img/ipadmini_dark__cdfcygd422uu_large.svg);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 54px;
+}
+
+.product-menu-compare {
+    background-image: url(../img/ipad_compare_dark__cxllw9w1tuy6_large.svg);
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 54px;
+}
+
+.product-menu-apple-pencil {
+    background-image: url(../img/apple_pencil_dark__c42qcvi9e802_large.svg);
+    background-repeat: no-repeat;
+    width: 3px;
+    height: 54px;
+}
+
+.product-menu-ipad-keyboards {
+    background-image: url(../img/keyboard_dark__dtedyad0xnqu_large.svg);
+    background-repeat: no-repeat;
+    width: 63px;
+    height: 54px;
+}
+
+.product-menu-airpods {
+    background-image: url(../img/airpods_dark__ccoezo86z37m_large.svg);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 54px;
+}
+
+.product-menu-accessories {
+    background-image: url(../img/ipad_acc_dark__bo0a4ftei9au_large.svg);
+    background-repeat: no-repeat;
+    width: 31px;
+    height: 54px;
+}
+
+.product-menu-ipados {
+    background-image: url(../img/ipados_dark__emr7k8pfle4i_large.svg);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 54px;
+}
+
+.product-menu-shop {
+    background-image: url(../img/shop_ipad_dark__ekfl60g78g4m_large.svg);
+    background-repeat: no-repeat;
+    width: 66px;
+    height: 54px;
+}
+
+.product-name {
+    font-size: 12px;
+    color: var(--gb-nav-font-color);
+}
