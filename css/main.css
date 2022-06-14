@@ -4,6 +4,10 @@
     --pd-slide-hover-font-color: #2997ff;
     --new-font-color: #f56300;
     --main-ipad-air-background-color: #000;
+    --button-blue-color: #0071e3;
+    --section-ipad-pro-background-color: #fff;
+    --headline-font-color-black: #1d1d1f;
+    --more-font-color: #06c;
 }
 
 /* 헤더 네비게이션 */
@@ -49,6 +53,7 @@ header {
     background-color: #fff;
     border-radius: 0.5px;
     margin-top: 18px;
+    opacity: .8;
 }
 
 .hamberger-menu-icon-2 {
@@ -58,6 +63,7 @@ header {
     background-color: #fff;
     border-radius: 0.5px;
     margin-top: 6px;
+    opacity: .8;
 }
 
 .hidden {
@@ -152,6 +158,24 @@ header {
     height: 44px;
 }
 
+.global-nav-container li {
+    opacity: .8;
+    transition: 0.3s;
+}
+
+.global-nav-container li:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width:833px) {
+    .mobile-hide {
+        display: none;
+    }
+    .pc-hide {
+        display: block;
+    }
+}
+
 /* 헤더 프로덕트 슬라이드  */
 
 #product-menu-area {
@@ -160,7 +184,7 @@ header {
 }
 
 .product-menu-ipad-container {
-    max-width: 860px;
+    width: 860px;
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -168,6 +192,7 @@ header {
     margin: 0 auto;
     padding: 0 40px;
     text-align: center;
+    overflow: hidden;
 }
 
 .product-menu-ipad-container figure {
@@ -253,15 +278,551 @@ header {
 
 .product-name {
     font-size: 12px;
+    word-spacing: -1px;
     color: var(--gb-nav-font-color);
 }
 
 .new {
     display: block;
-    font-size: 10px;
+    font-size: 11px;
     color: var(--new-font-color);
+    text-align: center;
+    padding-top: 2px;
 }
 
 .product-menu-ipad-container li:hover .product-name {
     color: var(--pd-slide-hover-font-color);
+}
+
+
+/* section 아이패드 에어 */
+
+#section-ipad-air {
+    padding-top: 68px;
+    padding-bottom: 66px;
+    background-color: var(--main-ipad-air-background-color);
+    position: relative;
+}
+
+.section-content {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.ipad-air-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.text-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-basis: 25%;
+    max-width: 25%;
+}
+
+.headline {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.headline-text {
+    font-size: 56px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.image-air-script {
+    display: inline-block;
+    background-image: url(../img/air_script__coyet2g7gkia_large.png);
+    background-size: 88px 46px;
+    background-repeat: no-repeat;
+    width: 88px;
+    height: 46px;
+}
+
+.typography {
+    font-size: 21px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.price {
+    font-size: 17px;
+    color: #fff;
+}
+
+.button {
+    display: block;
+    width: 90px;
+    height: 35px;
+    border-radius: 35px;
+    background-color: var(--button-blue-color);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 35px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.more {
+    color: var(--more-font-color);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.more:hover {
+    text-decoration: underline;
+}
+
+.more::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border: solid var(--more-font-color);
+    border-width: 0px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    transform: rotate(45deg);
+    margin-left: 3px;
+}
+
+.content-img {
+    flex-basis: 75%;
+    max-width: 75%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-ipad-air {
+    background-image: url(../img/ipad_air__d794tkovmk02_large.jpg);
+    background-size: 680px 695px;
+    background-repeat: no-repeat;
+    width: 680px;
+    height: 695px;
+}
+
+@media screen and (max-width:1068px) {
+    #section-ipad-air {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+    .section-content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 692px;
+    }
+    .img-ipad-air {
+        background-image: url(../img/ipad_air__d794tkovmk02_medium.jpg);
+        background-size: 504px 515px;
+        background-repeat: no-repeat;
+        width: 504px;
+        height: 515px;
+    }
+    .text-content-container {
+        flex-basis: 33.33333%;
+        max-width: 33.33333%;
+    }
+    .content-img {
+        flex-basis: 66.66667%;
+        max-width: 66.66667%;
+    }
+}
+
+
+/* section 아이패드 프로 */
+
+#section-ipad-pro {
+    background-color: var(--section-ipad-pro-background-color);
+    padding-top: 78px;
+    padding-bottom: 71px;
+}
+
+.img-ipad-pro {
+    background-image: url(../img/ipad_pro_hero__bh3eq6sqfjw2_large.jpg);
+    background-size: 1335px 598px;
+    background-repeat: no-repeat;
+    width: 1335px;
+    height: 598px;
+}
+
+.headline-text-othercolor {
+    font-size: 56px;
+    color: var(--headline-font-color-black);
+    font-weight: 600;
+}
+
+.typography-othercolor {
+    font-size: 21px;
+    color: var(--headline-font-color-black);
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+.price-othercolor {
+    font-size: 17px;
+    color: var(--headline-font-color-black);
+}
+
+
+/* section 아이패드  */
+
+.img-ipad {
+    background-image: url(../img/ipad_10_2__7yowwyyrbmaa_large.jpg);
+    background-size: 856px 813px;
+    background-repeat: no-repeat;
+    width: 856px;
+    height: 813px;
+}
+
+
+/* section 아이패드 미니  */
+
+.img-ipad-mini {
+    background-image: url(../img/ipad_mini__dn6g8b0hw8om_large.jpg);
+    background-size: 503px 579px;
+    background-repeat: no-repeat;
+    width: 503px;
+    height: 579px;
+}
+
+.image-mini-script {
+    background-image: url(../img/mini_script__bjahejz6luqa_large.png);
+    background-size: 103px 41px;
+    background-repeat: no-repeat;
+    width: 103px;
+    height: 41px;
+    display: inline-block;
+}
+
+
+/*  당신에게  맞는 아이패드는?  */
+
+#section-compare {
+    background-color: var(--gb-nav-font-color);
+}
+
+.compare-wrapper {
+    background-color: #fff;
+    padding-top: 115px;
+    padding-bottom: 105px;
+}
+
+.compare-headline-container {
+    max-width: 940px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.compare-headline {
+    color: var(--headline-font-color-black);
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: -3px;
+}
+
+/* 아이패드 프로 디바이스 */
+
+.ipad-pro-device-img {
+    background-image: url(../img/compare_ipad_pro__erf9x8mw04sy_large.png);
+    background-size: 189px 214px;
+    background-repeat: no-repeat;
+    width: 189px;
+    height: 214px;
+}
+
+.ipad-pro-colors {
+    background-image: url(../img/compare_ipad_pro_swatches__bxn5nqwduk9y_large.png);
+    background-size: 32px 14px;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 14px;
+}
+
+.cp-device-name {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--headline-font-color-black);
+    letter-spacing: -1px;
+    margin-bottom: 12px;
+}
+
+.cp-typography {
+    font-size: 17px;
+    color: var(--headline-font-color-black);
+    margin-bottom: 20px;
+}
+
+.cp-price {
+    font-size: 14px;
+    color: var(--headline-font-color-black);
+}
+
+.cp-button {
+    display: block;
+    width: 65px;
+    height: 25px;
+    border-radius: 35px;
+    background-color: var(--button-blue-color);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+.cp-more {
+    color: var(--more-font-color);
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cp-more::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border: solid var(--more-font-color);
+    border-width: 0px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    transform: rotate(45deg);
+    margin-left: 1px;
+}
+
+.cp-more:hover {
+    text-decoration: underline;
+}
+
+.display-size {
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--headline-font-color-black);
+}
+
+.m1-chip-img {
+    background-image: url(../img/compare_m1_chip__ev9f5zgvwo02_large.png);
+    background-size: 38px 38px;
+    background-repeat: no-repeat;
+    width: 38px;
+    height: 38px;
+}
+
+.camera-12mp-wide-10mp-ultrawide-img {
+    background-image: url(../img/compare_camera_12mp_wide_10mp_ultrawide__exe6qcqnzr42_large.png);
+    background-size: 38px 38px;
+    background-repeat: no-repeat;
+    width: 38px;
+    height: 38px;
+}
+
+.front-camera-12mp {
+    font-size: 19px;
+    font-weight: 600;
+    color: var();
+}
+
+.usbc-thunderbolt-img {
+    background-image: url(../img/compare_usbc_thunderbolt__fuat6j3gyc2u_large.png);
+    background-size: 41px 22px;
+    background-repeat: no-repeat;
+    width: 41px;
+    height: 22px;
+}
+
+.cellular-5g-img {
+    background-image: url(../img/compare_cellular_5g__gck9kjr82ci2_large.png);
+    background-size: 48px 35px;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 35px;
+}
+
+.apple-pencil-img {
+    background-image: url(../img/compare_pencil__2ii95qsgy0y6_large.png);
+    background-size: 62px 6px;
+    background-repeat: no-repeat;
+    width: 62px;
+    height: 6px;
+}
+
+.magic-keyboard-img {
+    background-image: url(../img/compare_magic_keyboard__cr367s50ehkm_large.png);
+    background-size: 68px 49px;
+    background-repeat: no-repeat;
+    width: 68px;
+    height: 49px;
+}
+
+/* 아이패드 에어 디바이스 */
+
+.ipad-air-device-img {
+    background-image: url(../img/compare_ipad_air__bxjv33pk6nte_large.png);
+    background-size: 136px 188px;
+    background-repeat: no-repeat;
+    width: 136px;
+    height: 188px;
+}
+
+.ipad-air-colors {
+    background-image: url(../img/compare_ipad_air_swatches__dagugd9h3nsm_large.png);
+    background-size: 85px 14px;
+    width: 85px;
+    height: 14px;
+}
+
+.camera-12mp-wide-img {
+    background-image: url(../img/compare_camera_12mp_wide__buiapmy4l402_large.png);
+    background-size: 38px 38px;
+    width: 38px;
+    height: 38px;
+}
+
+.usbc-img {
+    background-image: url(../img/compare_usbc__gnv70qm6mcuq_large.png);
+    background-size: 32px 22px;
+    width: 32px;
+    height: 22px;
+}
+
+/* 아이패드 디바이스 */
+
+.ipad-device-img {
+    background-image: url(../img/compare_ipad_10_2__fwgwy7jydtea_large.png);
+    background-size: 133px 191px;
+    width: 133px;
+    height: 191px;
+}
+
+.ipad-colors {
+    background-image: url(../img/compare_ipad_10_2_swatches__b77m5o9rqjhy_large.png);
+    background-size: 32px 14px;
+    width: 32px;
+    height: 14px;
+}
+
+.a13-bionic-chip-img {
+    background-image: url(../img/compare_a13_chip__f2yibwat6sya_large.png);
+    background-size: 38px 38px;
+    width: 38px;
+    height: 38px;
+}
+
+.camera-8mp-wide-img {
+    background-image: url(../img/compare_camera_8mp_wide__canjmhsldos2_large.png);
+    background-size: 38px 38px;
+    width: 38px;
+    height: 38px;
+}
+
+.lightning-img {
+    background-image: url(../img/compare_lightning__drp7mpo3oyie_large.png);
+    background-size: 32px 22px;
+    width: 32px;
+    height: 22px;
+}
+
+.cellular-lte-img {
+    background-image: url(../img/compare_cellular_4g__emz9l1sj4yye_large.png);
+    background-size: 48px 35px;
+    width: 48px;
+    height: 35px;
+}
+
+.smart-keyboard-img {
+    background-image: url(../img/compare_smart_keyboard__gh56kiymgfam_large.png);
+    background-size: 68px 49px;
+    width: 68px;
+    height: 49px;
+}
+
+/* 아이패드 미니 디바이스 */
+
+.ipad-mini-device-img {
+    background-image: url(../img/compare_ipad_mini__czcsk9ukpeie_large.png);
+    background-size: 103px 149px;
+    width: 103px;
+    height: 149px;
+}
+
+.ipad-mini-colors {
+    background-image: url(../img/compare_ipad_mini_swatches__fdzgy88hh6ai_large.png);
+    background-size: 68px 14px;
+    width: 68px;
+    height: 14px;
+}
+
+.a15-bionic-chip-img {
+    background-image: url(../img/compare_a15_chip__c4a0mtst408y_large.png);
+    background-size: 38px 38px;
+    width: 38px;
+    height: 38px;
+}
+
+.ipad-mini-camera-12mp-wide-img {
+    background-image: url(../img/compare_camera_12mp_wide_flash__ckjatrf9fp5y_large.png);
+    background-size: 38px 38px;
+    width: 38px;
+    height: 38px;
+}
+
+.bluetootht-keyboard-img {
+    background-image: url(../img/compare_bluetooth_keyboard__fsfc35t22vqu_large.png);
+    background-size: 68px 49px;
+    width: 68px;
+    height: 49px;
+}
+
+.cp-text-size-color {
+    font-size: 14px;
+    color: var(--headline-font-color-black);
+}
+
+
+/* 모든 아이패드 모델 비교하기 / 아이패드 쇼핑하기 */
+
+.all-ipad-model, .ipad-shopping {
+    font-size: 20px;
+    color: var(--more-font-color);
+}
+
+.all-ipad-model:hover, .ipad-shopping:hover {
+    text-decoration: underline;
+}
+
+.all-ipad-model::after, .ipad-shopping::after {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border: solid var(--more-font-color);
+    border-width: 0px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    transform: rotate(45deg);
+    margin-left: 3px;
+    margin-bottom: 4px;
 }
