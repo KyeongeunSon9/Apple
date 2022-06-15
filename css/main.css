@@ -11,6 +11,7 @@
     --footer-text-color: #6e6e73;
     --footer-link-color: #424245;
     --footer-directory-title-color: #1d1d1f;
+    --button-hover-background-color: #0077ED;
 }
 
 /* 헤더 네비게이션 */
@@ -286,6 +287,7 @@ header {
 }
 
 .product-menu-ipad-container li a {
+    display: block;
     position: relative;
 }
 
@@ -308,6 +310,9 @@ header {
     color: var(--pd-slide-hover-font-color);
 }
 
+main {
+    background-color: var(--gb-nav-font-color);
+}
 
 /* section 아이패드 에어 */
 
@@ -323,12 +328,13 @@ header {
     margin: 0 auto;
 }
 
-.ipad-air-link {
+.ipad-air-link, .ipad-pro-link {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 1;
 }
 
 .row {
@@ -344,6 +350,7 @@ header {
     text-align: center;
     flex-basis: 25%;
     max-width: 25%;
+    z-index: 2;
 }
 
 .headline {
@@ -394,6 +401,10 @@ header {
     margin-top: 20px;
 }
 
+.button:hover {
+    background-color: var(--button-hover-background-color);
+}
+
 .more {
     color: var(--more-font-color);
     font-size: 15px;
@@ -425,6 +436,7 @@ header {
     max-width: 75%;
     display: flex;
     justify-content: center;
+    width: 300px;
 }
 
 .img-ipad-air {
@@ -469,6 +481,16 @@ header {
     background-color: var(--section-ipad-pro-background-color);
     padding-top: 78px;
     padding-bottom: 71px;
+    margin: 15px;
+    position: relative;
+}
+
+.img-content {
+    width: 300px;
+}
+
+.img-overflow {
+    margin-left: 16.66667%;
 }
 
 .img-ipad-pro {
@@ -477,6 +499,10 @@ header {
     background-repeat: no-repeat;
     width: 1335px;
     height: 598px;
+}
+
+#section-ipad-pro .text-contnet {
+    margin-top: -125px;
 }
 
 .headline-text-othercolor {
@@ -500,6 +526,14 @@ header {
 
 
 /* section 아이패드  */
+
+#section-ipad-pro {
+    background-color: var(--section-ipad-pro-background-color);
+    padding-top: 78px;
+    padding-bottom: 71px;
+    margin: 15px;
+    position: relative;
+}
 
 .img-ipad {
     background-image: url(../img/ipad_10_2__7yowwyyrbmaa_large.jpg);
@@ -604,6 +638,10 @@ header {
     text-align: center;
     line-height: 25px;
     margin-top: 20px;
+}
+
+.cp-button:hover {
+    background-color: var(--button-hover-background-color);
 }
 
 .cp-more {
