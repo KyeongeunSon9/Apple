@@ -592,6 +592,7 @@ main {
     background-color: var(--section-ipad-pro-background-color);
     margin-top: 15px;
     position: relative;
+    margin-bottom: 40px;
 }
 
 #section-ipad-mini .row {
@@ -624,7 +625,7 @@ main {
 /*  당신에게  맞는 아이패드는?  */
 
 #section-compare {
-    margin: 30px auto;
+    margin: 0 auto;
     width: auto;
     max-width: 1440px;
     box-sizing: border-box;
@@ -690,7 +691,7 @@ main {
     margin-bottom: 75px;
     display: grid;
     grid-row-gap: 38px;
-    grid-column-gap: 34px;
+    grid-column-gap: 36px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(9, auto);
     grid-template-areas: 
@@ -906,7 +907,7 @@ main {
 }
 
 .cp-typography {
-    font-size: 16px;
+    font-size: 15px;
     color: var(--headline-font-color-black);
     margin-bottom: 20px;
     text-align: center;
@@ -965,10 +966,19 @@ main {
     text-decoration: underline;
 }
 
+#section-compare .row {
+    flex-direction: column;
+}
+
 .display-size {
     font-size: 19px;
     font-weight: 600;
     color: var(--headline-font-color-black);
+    margin-bottom: 10px;
+}
+
+.compare-grid figure {
+    margin-bottom: 10px;
 }
 
 .m1-chip-img {
@@ -991,6 +1001,7 @@ main {
     font-size: 19px;
     font-weight: 600;
     color: var(--headline-font-color-black);
+    margin-bottom: 10px;
 }
 
 .usbc-thunderbolt-img {
@@ -1252,9 +1263,10 @@ footer {
 }
 
 .footer-directory-container {
-    display: flex;
     max-width: 980px;
-    margin-top: 30px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .directory-column {
@@ -1273,7 +1285,7 @@ footer {
 }
 
 .directory-item a {
-    font-size: 12px;
+    font-size: 11px;
     color: var(--footer-link-color);
 }
 
@@ -1281,3 +1293,69 @@ footer {
     margin-top: 20px;
 }
 
+.shopping-tip-container {
+    border-bottom: 1px solid var(--footer-border-color);
+    padding-bottom: 15px;
+    margin-top: 30px;
+}
+
+.shopping-tip {
+    font-size: 12px;
+    color: var(--footer-link-color);
+}
+
+.shopping-tip a {
+    color: var(--more-font-color);
+}
+
+#footer-copyright {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.copyright {
+    display: inline;
+    font-size: 11px;
+    color: var(--footer-text-color);
+    display: inline;
+}
+
+.legal-link-container {
+    width: 400px;
+    margin-left: 20px;
+}
+
+.legal-link {
+    font-size: 11px;
+    color: var(--footer-link-color);
+}
+
+.legal-link::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    background-color: var(--footer-border-color);
+    margin-left: 5px;
+}
+
+.legal-link:last-child::after {
+    display: none;
+}
+
+.country-region {
+    font-size: 11px;
+    color: var(--footer-directory-title-color);
+    position: absolute;
+    right: 0;
+}
+
+.corporate-number {
+    font-size: 11px;
+    color: var(--footer-text-color);
+    word-spacing: -1px;
+}
