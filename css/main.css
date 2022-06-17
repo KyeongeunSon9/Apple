@@ -20,6 +20,7 @@
 
 header {
     width: 100%;
+    overflow: hidden;
 }
 
 #global-nav-area {
@@ -1328,6 +1329,19 @@ footer {
 /* 반응형 - 태블릿 */
 
 @media screen and (max-width:1068px) {
+    .headline-text {
+        font-size: 44px;
+    }
+
+    .image-air-script {
+        background-image: url(../img/air_script__coyet2g7gkia_medium.png);
+        background-size: 74px 40px;
+        background-repeat: no-repeat;
+        width: 74px;
+        height: 40px;
+    }
+
+
     #section-ipad-air {
         padding-top: 45px;
         padding-bottom: 45px;
@@ -1438,12 +1452,24 @@ footer {
 }
 
 @media screen and (max-width:734px) {
+
+    .row {
+        flex-direction: column;
+        width: 320px;
+        margin: 0 auto;
+    }
+
     .img-ipad-air {
         background-image: url(../img/ipad_air__d794tkovmk02_small.jpg);
         background-size: 310px 317px;
         background-repeat: no-repeat;
         width: 310px;
         height: 317px;
+        flex-shrink: 0;
+    }
+
+    .section-content {
+        width: 320px;
     }
 
     #section-ipad-air .text-content-container {
@@ -1454,8 +1480,7 @@ footer {
     #section-ipad-air .img-content {
         flex-basis: 100%;
         max-width: 100%;
-        display: flex;
-        justify-content: center;
+        margin: 0 auto;
         margin-top: 35px;
     }
 
@@ -1465,7 +1490,7 @@ footer {
         background-repeat: no-repeat;
         width: 540px;
         height: 268px;
-        transform: translateX(17.5%);
+        /* margin-left: -173px; */
     }
 
     #section-ipad-pro {
@@ -1531,7 +1556,6 @@ footer {
         max-width: 100%;
         display: flex;
         justify-content: center;
-        margin-left: 90px;
     }
 
     #section-ipad-mini .row {
@@ -1540,6 +1564,7 @@ footer {
 
     #section-compare {
         padding: 0;
+        margin: 0 auto;
     }
 
     .compare-wrapper {
@@ -1554,6 +1579,31 @@ footer {
     .compare-headline {
         font-size: 30px;
         line-height: 40px;
+    }
+
+    .device-img figure {
+        margin-bottom: 0;
+    }
+
+    .color-swatches {
+        margin-bottom: 15px;
+    }
+
+    .compare-links a {
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 20px;
+        font-size: 17px;
+    }
+
+    .compare-grid {
+        grid-column-gap: 10px;
+        grid-row-gap: 34px;
+        margin-bottom: 35px;
+    }
+
+    .device-img {
+        min-height: 141px;
     }
 
     .ipad-pro-device-img {
@@ -1588,28 +1638,32 @@ footer {
         height: 107px;
     }
 
-    .device-img figure {
-        margin-bottom: 0;
+    .compare-grid div {
+        max-width: 240px;
     }
 
-    .color-swatches {
-        margin-bottom: 15px;
+    .headline-text-othercolor {
+        font-size: 40px;
     }
 
-    .compare-links a {
-        margin: 0 auto;
-        display: block;
-        margin-bottom: 20px;
-        font-size: 17px;
+    .typography-othercolor {
+        font-size: 20px;
+        margin-bottom: 25px;
     }
 
-    .compare-grid {
-        grid-column-gap: 14px;
-        grid-row-gap: 35px;
-        margin-bottom: 35px;
+    .price-othercolor {
+        font-size: 15px;
     }
 
-    .device-img {
-        min-height: 141px;
+    .button {
+        margin-top: 15px;
+    }
+
+    .image-mini-script {
+        background-image: url(../img/mini_script__bjahejz6luqa_small.png);
+        background-size: 76px 31px;
+        background-repeat: no-repeat;
+        width: 76px;
+        height: 31px;
     }
 }
