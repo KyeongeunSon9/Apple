@@ -1183,15 +1183,13 @@ footer {
 .footnote-list {
     list-style: decimal;
     margin-top: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid var(--footer-border-color);
 }
 
 .footfont {
     font-size: 11px;
     color: var(--footer-text-color);
     margin-bottom: 10px;
-    line-height: 14px;
+    line-height: 15px;
 }
 
 .footnote-2 a {
@@ -1200,6 +1198,8 @@ footer {
 
 .apple-ipad-footer {
     display: flex;
+    border-top: 1px solid var(--footer-border-color);
+    padding-top: 15px;
 }
 
 .footer-apple-logo-img {
@@ -1448,6 +1448,41 @@ footer {
     }
     .pc-hide {
         display: block;
+    }
+    .apple-ipad-footer {
+        border-bottom: 1px solid var(--footer-border-color);
+        padding-bottom: 15px;
+    }
+
+    .footer-directory-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .directory-title {
+        color: var(--footer-text-color);
+        font-size: 11px;
+    }
+
+    .directory-column ul {
+        position: static;
+        display: none;
+    }
+    
+    .shopping-tip-container {
+        border: none;
+    }
+    #footer-copyright {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .copyright {
+        flex-basis: 100%;
+        margin-bottom: 8px;
+    }
+    .legal-link-container {
+        flex-basis: 100%;
+        margin: 0;
     }
 }
 
